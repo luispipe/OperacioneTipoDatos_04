@@ -16,7 +16,11 @@ public class MainActivity extends AppCompatActivity {
 
         Button operacionAscii= findViewById(R.id.buttonAscii);
 
-        Intent viewAscii= new Intent(getApplicationContext(), AsciiActivity.class);
+
+        //Intent es un elemento que nos permite generar un acción o petición a otro componente (Activitys-Fragments)
+
+        //MainActivity.this , getBaseContext() , getApplicationContext
+        Intent viewAscii= new Intent(getBaseContext(), AsciiActivity.class);
 
         operacionAscii.setOnClickListener(new View.OnClickListener() {
             @Override
